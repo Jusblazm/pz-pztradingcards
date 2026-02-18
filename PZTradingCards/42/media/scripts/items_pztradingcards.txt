@@ -60,7 +60,7 @@ module Base
         DisplayCategory = Literature,
         ItemType = base:literature,
         Weight = 0.01,
-        Icon = TradingCardFullFoil,
+        Icon = TradingCard,
         WorldStaticModel = TradingCard_FullFoil,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
@@ -70,7 +70,7 @@ module Base
         DisplayCategory = Literature,
         ItemType = base:literature,
         Weight = 0.01,
-        Icon = TradingCardPortraitFoil,
+        Icon = TradingCard,
         WorldStaticModel = TradingCard_PortraitFoil,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
