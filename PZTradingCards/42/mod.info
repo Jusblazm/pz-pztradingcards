@@ -1,0 +1,9 @@
+name=PZ Trading Cards
+id=JusTradingCards
+description=Jusblazm's Project Zomboid Trading Cards.
+poster=poster.png
+icon=icon.png
+author=Jusblazm
+url=https://github.com/Jusblazm/pz-pztradingcards
+versionMin=42.13
+modversion=0.1

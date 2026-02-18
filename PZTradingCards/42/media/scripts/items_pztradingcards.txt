@@ -1,0 +1,77 @@
+module Base
+{
+    imports 
+    {
+        Base
+    }
+
+    /******* LITERATURE - TRADING CARDS *******/
+
+    item PZTradingCardBoosterPack
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.1,
+        Icon = TradingCardBoosterPack,
+        WorldStaticModel = TradingCard_BoosterPack,
+    }
+
+    item PZTradingCardBloodshedBoosterPack
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.1,
+        Icon = TradingCardBloodshedBoosterPack,
+        WorldStaticModel = TradingCard_BloodshedBoosterPack,
+    }
+
+    item PZTradingCardBasic
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.01,
+        Icon = TradingCard,
+        WorldStaticModel = TradingCard_Basic,
+		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
+    }
+
+    item PZTradingCardBloodshed
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.01,
+        Icon = TradingCardBloodshed,
+        WorldStaticModel = TradingCard_Bloodshed,
+		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
+    }
+
+    item PZTradingCardBorderFoil
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.01,
+        Icon = TradingCard,
+        WorldStaticModel = TradingCard_BorderFoil,
+		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
+    }
+
+    item PZTradingCardFullFoil
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.01,
+        Icon = TradingCardFullFoil,
+        WorldStaticModel = TradingCard_FullFoil,
+		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
+    }
+
+    item PZTradingCardPortraitFoil
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.01,
+        Icon = TradingCardPortraitFoil,
+        WorldStaticModel = TradingCard_PortraitFoil,
+		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
+    }
+}
