@@ -1,12 +1,11 @@
 -- PZTradingCards_SpecialLootSpawns
 SpecialLootSpawns = SpecialLootSpawns or {}
 
-local CARD_COUNT = 37
-
 SpecialLootSpawns.OnCreatePZTradingCard = function(item)
     if not item then return end
+    local PZTradingCards_Utils = require("PZTradingCards_Utils")
 
-    local cardID = ZombRand(1, CARD_COUNT+1)
+    local cardID = PZTradingCards_Utils.getWeightedCardID()
     item:getModData().cardID = cardID
 
     local shortType = item:getType()
