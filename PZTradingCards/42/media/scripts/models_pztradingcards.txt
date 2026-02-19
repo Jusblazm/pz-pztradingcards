@@ -1,5 +1,19 @@
 module Base
 {
+    model TradingCard_BoosterPack {
+        mesh = BoosterPack,
+        texture = WorldItems/TradingCard_BoosterPack,
+        scale = 0.01,
+    }
+
+    model TradingCard_BloodshedBoosterPack {
+        mesh = BoosterPack,
+        texture = WorldItems/TradingCard_BloodshedBoosterPack,
+        scale = 0.01,
+    }
+
+    /**** BEGIN AUTO-GENERATE VIA PYTHON ****/
+
     model TradingCard_Basic1 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic1, scale = 0.01, }
     model TradingCard_Basic2 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic2, scale = 0.01, }
     model TradingCard_Basic3 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic3, scale = 0.01, }
@@ -185,4 +199,6 @@ module Base
     model TradingCard_PortraitFoil35 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil35, scale = 0.01, }
     model TradingCard_PortraitFoil36 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil36, scale = 0.01, }
     model TradingCard_PortraitFoil37 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil37, scale = 0.01, }
+
+    /**** END AUTO-GENERATE VIA PYTHON ****/
 }
