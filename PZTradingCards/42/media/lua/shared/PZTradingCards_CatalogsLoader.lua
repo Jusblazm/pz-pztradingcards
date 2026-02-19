@@ -15,6 +15,9 @@ if getActivatedMods():contains(MailOrderCatalogs) then
         local site = require("catalogs/spiffotradingcards_com")
         local catalog = "Base.PZTradingCardsCatalog"
         registrar.registerWebsite(site, catalog)
+        local site = require("catalogs/scalpersrus_net")
+        local catalog = "Base.ScalpersRUsCatalog"
+        registrar.registerWebsite(site, catalog)
     end
     Events.OnInitGlobalModData.Add(registerCatalogs)
     Events.OnGameStart.Add(registerCatalogs)
