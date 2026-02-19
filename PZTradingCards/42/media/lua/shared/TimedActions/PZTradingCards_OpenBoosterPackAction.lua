@@ -7,6 +7,15 @@ function PZTradingCards_OpenBoosterPackAction:isValid()
     return self.item and self.character:getInventory():contains(self.item)
 end
 
+function PZTradingCards_OpenBoosterPackAction:start()
+    self:setActionAnim("Loot")
+    self.character:SetVariable("LootPosition", "Mid")
+end
+
+function PZTradingCards_OpenBoosterPackAction:stop()
+    ISBaseTimedAction.stop(self)
+end
+
 function PZTradingCards_OpenBoosterPackAction:perform()
     ISBaseTimedAction.perform(self)
 end
