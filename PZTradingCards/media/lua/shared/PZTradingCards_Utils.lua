@@ -1,0 +1,31 @@
+-- PZTradingCards_Utils
+local PZTradingCards_Utils = {}
+
+local CARD_COUNT = 37
+local CARD_WEIGHTS = {
+    [7] = 34, [20] = 45, [21] = 45,
+    [27] = 29, [28] = 38, [29] = 26,
+    [32] = 18, [34] = 14, [35] = 8,
+    [36] = 10, [37] = 25
+}
+
+function PZTradingCards_Utils.getWeightedCardID()
+    local totalWeight = 0
+
+    for i=1, CARD_COUNT do
+        totalWeight = totalWeight + (CARD_WEIGHTS[i] or 50)
+    end
+
+    local roll = ZombRand(totalWeight)
+    local cumulative = 0
+
+    for i=1, CARD_COUNT do
+        cumulative = cumulative + (CARD_WEIGHTS[i] or 50)
+        if roll < cumulative then
+            return i
+        end
+    end
+    return 1
+end
+
+return PZTradingCards_Utils
