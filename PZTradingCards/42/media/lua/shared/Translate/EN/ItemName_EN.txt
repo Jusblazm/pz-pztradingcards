@@ -1,4 +1,9 @@
 ItemName_EN = {
+    ItemName_Base.PZTradingCardBoosterPack = "Spiffo Card Booster Pack",
+    ItemName_Base.PZTradingCardBloodshedBoosterPack = "Spiffo Card Bloodshed Booster Pack",
+    ItemName_Base.PZTradingCardsCatalog = "Catalog: Spiffo Trading Cards",
+    ItemName_Base.ScalpersRUsCatalog = "Catalog: Scalpers 'R Us",
+    
     ItemName_Base.PZTradingCardBasic = "Spiffo Card (Basic)",
     ItemName_Base.PZTradingCardBloodshed = "Spiffo Card (Bloodshed)",
     ItemName_Base.PZTradingCardBorderFoil = "Spiffo Card (Border Foil)",

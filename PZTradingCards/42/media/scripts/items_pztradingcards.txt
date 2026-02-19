@@ -5,25 +5,29 @@ module Base
         Base
     }
 
-    /******* LITERATURE - TRADING CARDS *******/
+    /******* MEMENTO - BOOSTER PACKS *******/
 
     item PZTradingCardBoosterPack
     {
-        DisplayCategory = Literature,
+        DisplayCategory = Memento,
         ItemType = base:literature,
         Weight = 0.1,
         Icon = TradingCardBoosterPack,
         WorldStaticModel = TradingCard_BoosterPack,
+        Tags = base:ismemento,
     }
 
     item PZTradingCardBloodshedBoosterPack
     {
-        DisplayCategory = Literature,
+        DisplayCategory = Memento,
         ItemType = base:literature,
         Weight = 0.1,
         Icon = TradingCardBloodshedBoosterPack,
         WorldStaticModel = TradingCard_BloodshedBoosterPack,
+        Tags = base:ismemento,
     }
+
+    /******* MEMENTO - TRADING CARDS *******/
 
     item PZTradingCardBasic
     {
@@ -32,6 +36,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_Basic,
+        Tags = base:ismemento,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -42,6 +47,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCardBloodshed,
         WorldStaticModel = TradingCard_Bloodshed,
+        Tags = base:ismemento,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -52,6 +58,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_BorderFoil,
+        Tags = base:ismemento,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -62,6 +69,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_FullFoil,
+        Tags = base:ismemento,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -72,6 +80,37 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_PortraitFoil,
+        Tags = base:ismemento,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
+
+    /******* LITERATURE - CATALOG *******/
+
+	item PZTradingCardsCatalog
+	{
+		DisplayCategory = Literature,
+		ItemType = base:literature,
+		Weight = 0.5,
+		Icon = Magazine,
+		BoredomChange = -10,
+		StressChange = -10,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+		Tags = base:magazine,	
+		OnCreate = SpecialLootSpawns.OnCreateCatalog,
+	}
+
+	item ScalpersRUsCatalog
+	{
+		DisplayCategory = Literature,
+		ItemType = base:literature,
+		Weight = 0.5,
+		Icon = Magazine,
+		BoredomChange = -10,
+		StressChange = -10,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+		Tags = base:magazine,	
+		OnCreate = SpecialLootSpawns.OnCreateCatalog,
+	}
 }

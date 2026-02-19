@@ -32,3 +32,8 @@ SpecialLootSpawns.OnCreatePZTradingCard = function(item)
         item:setWorldStaticModel(modelPrefix .. tostring(cardID))
     end
 end
+
+SpecialLootSpawns.OnCreateCatalog = function(item)
+    if not item then return end
+    item:getModData().literatureTitle = item:getFullType()
+end
