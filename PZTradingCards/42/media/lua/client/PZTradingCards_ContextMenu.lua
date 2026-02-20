@@ -11,6 +11,7 @@ local function onFillInventoryObjectContextMenu(playerIndex, context, items)
 
         if PZTradingCards_Utils.isValidBoosterPack(item:getFullType()) then
             context:addOption(getText("ContextMenu_PZTradingCards_Inventory_OpenBoosterPack"), item, function()
+                ISInventoryPaneContextMenu.transferIfNeeded(player, item)
                 ISTimedActionQueue.add(PZTradingCards_OpenBoosterPackAction:new(player, item))
             end)
         end
