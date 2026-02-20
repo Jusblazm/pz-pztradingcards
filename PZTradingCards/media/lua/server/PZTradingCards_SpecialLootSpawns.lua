@@ -26,10 +26,6 @@ SpecialLootSpawns.OnCreatePZTradingCard = function(item)
     elseif shortType == "PZTradingCardPortraitFoil" then
         modelPrefix = "TradingCard_PortraitFoil"
     end
-
-    if modelPrefix then
-        item:setWorldStaticModel(modelPrefix .. tostring(cardID))
-    end
 end
 
 SpecialLootSpawns.OnCreateCatalog = function(item)
