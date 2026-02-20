@@ -1,3 +1,4 @@
 ContextMenu_EN = {
     ContextMenu_PZTradingCards_Inventory_OpenBoosterPack = "Open Spiffo Card Booster Pack",
+    ContextMenu_PZTradingCards_Inventory_ViewCardArtwork = "View Trading Card Artwork",
 }
