@@ -1,0 +1,5 @@
+UI_EN = {
+    UI_PZTradingCards_SiteDescription_ScalpersRUsNet = "The best place to get all those hard-to-find collectibles at a fair price.",
+    UI_PZTradingCards_SiteDescription_SpiffoTradingCardsCom = "Home of the collectible Spiffo Trading Cards!",
+    UI_PZTradingCards_ItemDescription_PZTradingCardBoosterPack = "A booster pack containing 9 random cards.",
+}

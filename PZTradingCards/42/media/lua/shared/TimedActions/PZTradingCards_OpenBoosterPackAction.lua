@@ -7,6 +7,15 @@ function PZTradingCards_OpenBoosterPackAction:isValid()
     return self.item and self.character:getInventory():contains(self.item)
 end
 
+function PZTradingCards_OpenBoosterPackAction:start()
+    self:setActionAnim("Loot")
+    self.character:SetVariable("LootPosition", "Mid")
+end
+
+function PZTradingCards_OpenBoosterPackAction:stop()
+    ISBaseTimedAction.stop(self)
+end
+
 function PZTradingCards_OpenBoosterPackAction:perform()
     ISBaseTimedAction.perform(self)
 end
@@ -17,29 +26,37 @@ function PZTradingCards_OpenBoosterPackAction:complete()
     inv:Remove(self.item)
     sendRemoveItemFromContainer(inv, self.item)
 
-    for i=1, 7 do
-        local basicCard = instanceItem("Base.PZTradingCardBasic")
-        inv:AddItem(basicCard)
-        sendAddItemToContainer(inv, basicCard)
-    end
+    if self.item:getFullType() == "Base.PZTradingCardBoosterPack" then
+        for i=1, 7 do
+            local basicCard = instanceItem("Base.PZTradingCardBasic")
+            inv:AddItem(basicCard)
+            sendAddItemToContainer(inv, basicCard)
+        end
 
-    local foilCard = instanceItem("Base.PZTradingCardBorderFoil")
-    inv:AddItem(foilCard)
-    sendAddItemToContainer(inv, foilCard)
+        local foilCard = instanceItem("Base.PZTradingCardBorderFoil")
+        inv:AddItem(foilCard)
+        sendAddItemToContainer(inv, foilCard)
 
-    local roll = ZombRand(100)+1
-    local finalFoilCard
+        local roll = ZombRand(100)+1
+        local finalFoilCard
 
-    if roll <= 65 then
-        finalFoilCard = instanceItem("Base.PZTradingCardBorderFoil")
-    elseif roll <= 90 then
-        finalFoilCard = instanceItem("Base.PZTradingCardPortraitFoil")
+        if roll <= 65 then
+            finalFoilCard = instanceItem("Base.PZTradingCardBorderFoil")
+        elseif roll <= 90 then
+            finalFoilCard = instanceItem("Base.PZTradingCardPortraitFoil")
+        else
+            finalFoilCard = instanceItem("Base.PZTradingCardFullFoil")
+        end
+        
+        inv:AddItem(finalFoilCard)
+        sendAddItemToContainer(inv, finalFoilCard)
     else
-        finalFoilCard = instanceItem("Base.PZTradingCardFullFoil")
+        for i=1, 9 do
+            local basicCard = instanceItem("Base.PZTradingCardBloodshed")
+            inv:AddItem(basicCard)
+            sendAddItemToContainer(inv, basicCard)
+        end
     end
-    
-    inv:AddItem(finalFoilCard)
-    sendAddItemToContainer(inv, finalFoilCard)
 end
 
 function PZTradingCards_OpenBoosterPackAction:getDuration()
