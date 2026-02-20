@@ -9,6 +9,27 @@ local CARD_WEIGHTS = {
     [36] = 10, [37] = 25
 }
 
+PZTradingCards_Utils.validBoosterPacks = {
+    ["Base.PZTradingCardBoosterPack"] = true,
+    ["Base.PZTradingCardBloodshedBoosterPack"] = true,
+}
+
+PZTradingCards_Utils.validTradingCards = {
+    ["Base.PZTradingCardBasic"] = true,
+    ["Base.PZTradingCardBloodshed"] = true,
+    ["Base.PZTradingCardBorderFoil"] = true,
+    ["Base.PZTradingCardFullFoil"] = true,
+    ["Base.PZTradingCardPortraitFoil"] = true,
+}
+
+function PZTradingCards_Utils.isValidBoosterPack(itemFullType)
+    return PZTradingCards_Utils.validBoosterPacks[itemFullType]
+end
+
+function PZTradingCards_Utils.isValidTradingCard(itemFullType)
+    return PZTradingCards_Utils.validTradingCards[itemFullType]
+end
+
 function PZTradingCards_Utils.getWeightedCardID()
     local totalWeight = 0
 

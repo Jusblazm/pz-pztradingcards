@@ -10,7 +10,7 @@ module Base
     item PZTradingCardBoosterPack
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.1,
         Icon = TradingCardBoosterPack,
         WorldStaticModel = TradingCard_BoosterPack,
@@ -20,7 +20,7 @@ module Base
     item PZTradingCardBloodshedBoosterPack
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.1,
         Icon = TradingCardBloodshedBoosterPack,
         WorldStaticModel = TradingCard_BloodshedBoosterPack,
@@ -32,7 +32,7 @@ module Base
     item PZTradingCardBasic
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_Basic,
@@ -43,7 +43,7 @@ module Base
     item PZTradingCardBloodshed
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.01,
         Icon = TradingCardBloodshed,
         WorldStaticModel = TradingCard_Bloodshed,
@@ -54,7 +54,7 @@ module Base
     item PZTradingCardBorderFoil
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_BorderFoil,
@@ -65,7 +65,7 @@ module Base
     item PZTradingCardFullFoil
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_FullFoil,
@@ -76,7 +76,7 @@ module Base
     item PZTradingCardPortraitFoil
     {
         DisplayCategory = Memento,
-        Type = Literature,
+        Type = Normal,
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_PortraitFoil,
