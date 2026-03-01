@@ -10,8 +10,13 @@ SpecialLootSpawns.OnCreatePZTradingCard = function(item)
 
     local shortType = item:getType()
 
-    local translationKey = "Base." .. shortType .. tostring(cardID)
-    item:setName(getItemNameFromFullType(translationKey))
+    -- local translationKey = "IGUI_" .. shortType .. tostring(cardID)
+    -- local itemName = getItemNameFromFullType(translationKey)
+    -- item:setName(itemName)
+    -- item:setName(getText(translationKey))
+    -- item:setCustomName(true)
+    -- print("translate ", getText(translationKey))
+    PZTradingCards_Utils.setCardName(item)
 
     local modelPrefix = nil
 

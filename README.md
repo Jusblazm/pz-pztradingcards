@@ -1,4 +1,5 @@
 # PZ Trading Cards
+*Can you pull that extremely rare full foil card?* \
 Only on Steam's Workshop at: https://steamcommunity.com/sharedfiles/filedetails/?id=3669634817 \
 If found elsewhere, please report.
 

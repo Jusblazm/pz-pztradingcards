@@ -1,6 +1,8 @@
 -- PZTradingCards_CardViewer
 PZTradingCards_CardViewer = {}
 
+local PZTradingCards_Utils = require("PZTradingCards_Utils")
+
 local ISPanel = ISPanel
 
 PZTradingCards_CardViewer = ISPanel:derive("PZTradingCards_CardViewer")
@@ -61,6 +63,8 @@ function PZTradingCards_CardViewer.displayTradingCardArtwork(item)
 
     local shortType = item:getType()
     local modelPrefix = nil
+
+    PZTradingCards_Utils.setCardName(item)
 
     if shortType == "PZTradingCardBasic" then
         modelPrefix = "TradingCard_Basic"
