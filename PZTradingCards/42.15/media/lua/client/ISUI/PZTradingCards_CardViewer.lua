@@ -64,7 +64,7 @@ function PZTradingCards_CardViewer.displayTradingCardArtwork(item)
     local shortType = item:getType()
     local modelPrefix = nil
 
-    -- PZTradingCards_Utils.setCardName(item)
+    PZTradingCards_Utils.setCardName(item)
 
     if shortType == "PZTradingCardBasic" then
         modelPrefix = "TradingCard_Basic"
