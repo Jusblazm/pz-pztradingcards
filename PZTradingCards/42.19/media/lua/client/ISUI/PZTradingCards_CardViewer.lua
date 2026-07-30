@@ -81,10 +81,10 @@ function PZTradingCards_CardViewer.displayTradingCardArtwork(item)
     if not modelPrefix then return end
 
     local texturePath = "media/ui/PZTradingCards/" .. modelPrefix .. tostring(cardID) .. ".png"
-    local w = 506 * 0.5
-    local h = 761 * 0.5
-    local x = (getCore():getScreenWidth() - w) / 2
-    local y = (getCore():getScreenHeight() - h) / 2
+    local width = CARD_W * SCALE
+    local height = CARD_H * SCALE
+    local x = (getCore():getScreenWidth() - width) / 2
+    local y = (getCore():getScreenHeight() - height) / 2
 
     local panel = PZTradingCards_CardViewer:new(x, y, texturePath)
     panel:initialise()
