@@ -5,7 +5,7 @@ If found elsewhere, please report.
 
 ## What This Mod Does
 * Adds 37 unique trading cards.
-* Adds 5 different sets: Basic, Border Foil, Portrait Foil, Full Foil, and Bloodshed.
+* Adds 6 different sets: Basic, Border Foil, Portrait Foil, Full Foil, Bloodshed, and Bloodshed Full Foil.
 * Integrates with [Mail Order Catalogs](https://steamcommunity.com/sharedfiles/filedetails/?id=3555453653).
 
 Please check the Steam Workshop page for full details.
