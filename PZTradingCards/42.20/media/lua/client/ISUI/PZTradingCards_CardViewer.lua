@@ -64,12 +64,14 @@ function PZTradingCards_CardViewer.displayTradingCardArtwork(item)
     local shortType = item:getType()
     local modelPrefix = nil
 
-    -- PZTradingCards_Utils.setCardName(item)
+    PZTradingCards_Utils.setCardName(item)
 
     if shortType == "PZTradingCardBasic" then
         modelPrefix = "TradingCard_Basic"
     elseif shortType == "PZTradingCardBloodshed" then
         modelPrefix = "TradingCard_Bloodshed"
+    elseif shortType == "PZTradingCardBloodshedFullFoil" then
+        modelPrefix = "TradingCard_BloodshedFullFoil"
     elseif shortType == "PZTradingCardBorderFoil" then
         modelPrefix = "TradingCard_BorderFoil"
     elseif shortType == "PZTradingCardFullFoil" then
@@ -81,10 +83,10 @@ function PZTradingCards_CardViewer.displayTradingCardArtwork(item)
     if not modelPrefix then return end
 
     local texturePath = "media/ui/PZTradingCards/" .. modelPrefix .. tostring(cardID) .. ".png"
-    local w = 506 * 0.5
-    local h = 761 * 0.5
-    local x = (getCore():getScreenWidth() - w) / 2
-    local y = (getCore():getScreenHeight() - h) / 2
+    local width = CARD_W * SCALE
+    local height = CARD_H * SCALE
+    local x = (getCore():getScreenWidth() - width) / 2
+    local y = (getCore():getScreenHeight() - height) / 2
 
     local panel = PZTradingCards_CardViewer:new(x, y, texturePath)
     panel:initialise()

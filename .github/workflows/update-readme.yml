@@ -3,7 +3,7 @@ name: Update Translation Table
 on:
   push:
     paths:
-      - 'PZTradingCards/42/media/lua/shared/Translate/**'
+      - 'PZTradingCards/42.20/media/lua/shared/Translate/**'
       - 'scripts/update-readme.lua'
   workflow_dispatch:
 
