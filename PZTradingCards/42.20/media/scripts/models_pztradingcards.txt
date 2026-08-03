@@ -51,6 +51,8 @@ module Base
     model TradingCard_Basic35 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic35, scale = 0.01, }
     model TradingCard_Basic36 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic36, scale = 0.01, }
     model TradingCard_Basic37 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic37, scale = 0.01, }
+    model TradingCard_Basic38 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic38, scale = 0.01, }
+    model TradingCard_Basic39 { mesh = TradingCard, texture = WorldItems/TradingCard_Basic39, scale = 0.01, }
     model TradingCard_Bloodshed1 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed1, scale = 0.01, }
     model TradingCard_Bloodshed2 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed2, scale = 0.01, }
     model TradingCard_Bloodshed3 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed3, scale = 0.01, }
@@ -88,6 +90,8 @@ module Base
     model TradingCard_Bloodshed35 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed35, scale = 0.01, }
     model TradingCard_Bloodshed36 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed36, scale = 0.01, }
     model TradingCard_Bloodshed37 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed37, scale = 0.01, }
+    model TradingCard_Bloodshed38 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed38, scale = 0.01, }
+    model TradingCard_Bloodshed39 { mesh = TradingCard, texture = WorldItems/TradingCard_Bloodshed39, scale = 0.01, }
     model TradingCard_BloodshedFullFoil1 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil1, scale = 0.01, }
     model TradingCard_BloodshedFullFoil2 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil2, scale = 0.01, }
     model TradingCard_BloodshedFullFoil3 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil3, scale = 0.01, }
@@ -125,6 +129,8 @@ module Base
     model TradingCard_BloodshedFullFoil35 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil35, scale = 0.01, }
     model TradingCard_BloodshedFullFoil36 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil36, scale = 0.01, }
     model TradingCard_BloodshedFullFoil37 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil37, scale = 0.01, }
+    model TradingCard_BloodshedFullFoil38 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil38, scale = 0.01, }
+    model TradingCard_BloodshedFullFoil39 { mesh = TradingCard, texture = WorldItems/TradingCard_BloodshedFullFoil39, scale = 0.01, }
     model TradingCard_BorderFoil1 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil1, scale = 0.01, }
     model TradingCard_BorderFoil2 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil2, scale = 0.01, }
     model TradingCard_BorderFoil3 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil3, scale = 0.01, }
@@ -162,6 +168,8 @@ module Base
     model TradingCard_BorderFoil35 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil35, scale = 0.01, }
     model TradingCard_BorderFoil36 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil36, scale = 0.01, }
     model TradingCard_BorderFoil37 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil37, scale = 0.01, }
+    model TradingCard_BorderFoil38 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil38, scale = 0.01, }
+    model TradingCard_BorderFoil39 { mesh = TradingCard, texture = WorldItems/TradingCard_BorderFoil39, scale = 0.01, }
     model TradingCard_FullFoil1 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil1, scale = 0.01, }
     model TradingCard_FullFoil2 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil2, scale = 0.01, }
     model TradingCard_FullFoil3 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil3, scale = 0.01, }
@@ -199,6 +207,8 @@ module Base
     model TradingCard_FullFoil35 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil35, scale = 0.01, }
     model TradingCard_FullFoil36 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil36, scale = 0.01, }
     model TradingCard_FullFoil37 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil37, scale = 0.01, }
+    model TradingCard_FullFoil38 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil38, scale = 0.01, }
+    model TradingCard_FullFoil39 { mesh = TradingCard, texture = WorldItems/TradingCard_FullFoil39, scale = 0.01, }
     model TradingCard_PortraitFoil1 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil1, scale = 0.01, }
     model TradingCard_PortraitFoil2 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil2, scale = 0.01, }
     model TradingCard_PortraitFoil3 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil3, scale = 0.01, }
@@ -236,6 +246,8 @@ module Base
     model TradingCard_PortraitFoil35 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil35, scale = 0.01, }
     model TradingCard_PortraitFoil36 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil36, scale = 0.01, }
     model TradingCard_PortraitFoil37 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil37, scale = 0.01, }
+    model TradingCard_PortraitFoil38 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil38, scale = 0.01, }
+    model TradingCard_PortraitFoil39 { mesh = TradingCard, texture = WorldItems/TradingCard_PortraitFoil39, scale = 0.01, }
 
     /**** END AUTO-GENERATE VIA PYTHON ****/
 }
