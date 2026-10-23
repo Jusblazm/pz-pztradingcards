@@ -36,7 +36,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_Basic,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -47,7 +47,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCardBloodshed,
         WorldStaticModel = TradingCard_Bloodshed,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -58,7 +58,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCardBloodshed,
         WorldStaticModel = TradingCard_BloodshedFullFoil,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -69,7 +69,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_BorderFoil,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -80,7 +80,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_FullFoil,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
@@ -91,7 +91,7 @@ module Base
         Weight = 0.01,
         Icon = TradingCard,
         WorldStaticModel = TradingCard_PortraitFoil,
-        Tags = base:ismemento,
+        Tags = base:ismemento;base:fitswallet,
 		OnCreate = SpecialLootSpawns.OnCreatePZTradingCard,
     }
 
